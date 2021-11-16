@@ -1,0 +1,112 @@
+
+/**
+*Sets the background colour of the main body of the article section.
+*/
+
+.topMain{
+    // padding:150px 0px;
+    position: absolute;
+    top:1750px;
+    z-index: 100;
+    width:100%;
+}
+.middleMain{
+    height:auto;
+    background-color: $primaryLight;
+
+    position: absolute;
+    top:2250px;
+    z-index: 100;
+    width:100%;
+}
+.bottomMain{
+    position: absolute;
+    top:4750px;
+    left:35%;
+    z-index: 100;
+    width:60%;
+
+    h2{
+        color:$primaryLight;
+    }
+    p{
+        color:rgba(255,255,255, 0.5);
+    }
+    .lowerLinks{
+        a{
+            color:$blueHighlight;
+            text-transform: capitalize;
+            &:first-child{
+                margin-right:5%;
+                margin-left: 3%;
+            }
+        }
+    }
+}
+
+/**
+*
+*/
+.article{
+    // width:80%;
+    h2{
+        padding-bottom: 20px;
+    }
+}
+
+#articleWrapper{
+    width:100%;
+}
+
+
+
+@media(min-width:1200px){
+
+    .middleMain{
+        iframe{
+            display: flex;
+            flex-wrap: nowrap;
+            width:1200px;
+            height:500px;
+            margin:0 auto 125px auto;
+        }
+        h3{
+            width:1200px;
+            margin:0 auto 50px auto;
+            font-size: 32px;
+        }
+    }
+    .articles{
+        display: flex;
+        flex-wrap: nowrap;
+        width:1200px;
+        margin:0 auto;
+        .article{
+            width:33%;
+            margin-right:50px; 
+            margin-bottom: 100px;
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-weight: 300;
+                margin-bottom:25px;
+            }
+            a{
+                color:transparent;
+                text-transform: capitalize;
+                text-decoration: underline;
+            }
+            &:hover{
+                a{
+                    // display: block;
+                    color:$footerDark;
+                    &:hover{
+                        color:$blueHighlight;
+
+                    }
+                }
+            }
+        }
+    }
+}

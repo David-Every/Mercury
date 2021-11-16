@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3 {
+  font-family: 'Montagu Slab', serif;
+  font-weight: 400; }
+
+p, a {
+  font-family: 'Roboto', sans-serif; }
+
+#menu {
+  width: 5.7%;
+  margin-left: auto;
+  background-color: #1c1c1c;
+  padding: 25px 75px 25px 25px; }
+  #menu i {
+    color: rgba(255, 255, 255, 0.6); }
+    #menu i:hover {
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer; }
+
+#headerWrapper {
+  width: 100%; }
+  #headerWrapper .headerImage {
+    width: 90%;
+    margin-left: auto;
+    height: auto; }
+    #headerWrapper .headerImage img {
+      position: absolute;
+      z-index: 1;
+      width: 90%;
+      height: 95%; }
+
+.headerOverlay {
+  z-index: 300;
+  position: absolute;
+  top: 350px;
+  left: 250px;
+  width: 1200px; }
+  .headerOverlay h1 {
+    color: white; }
+  .headerOverlay .headingLinks {
+    position: relative;
+    top: 300px;
+    left: 125px;
+    display: flex;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.6); }
+    .headerOverlay .headingLinks .linkInfo {
+      margin-right: 250px; }
+      .headerOverlay .headingLinks .linkInfo a {
+        color: rgba(255, 255, 255, 0.8); }
+      .headerOverlay .headingLinks .linkInfo::before {
+        content: "00";
+        color: #4dc1b4;
+        font-weight: 500; }
+
+/*
+    Grid troubleshooting remove or comment out
+*/
+.grid-container {
+  background-color: #2196F3; }
+  .grid-container .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8); }
+
+/*
+    Grid troubleshooting remove or comment out
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .grid-container .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center; }
+
+#clients {
+  position: absolute;
+  top: 1500px;
+  left: 40%; }
+  #clients h2 {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 34px;
+    z-index: 100; }
+    #clients h2::first-letter {
+      text-transform: uppercase; }
+
+.gridstart {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  width: 80%;
+  margin: 75px auto 100px auto;
+  overflow: hidden; }
+  .gridstart .clientGrid-item {
+    width: 50px;
+    font-size: 30px;
+    text-align: center; }
+
+/**
+*Sets the background colour of the main body of the article section.
+*/
+.topMain {
+  position: absolute;
+  top: 1750px;
+  z-index: 100;
+  width: 100%; }
+
+.middleMain {
+  height: auto;
+  background-color: white;
+  position: absolute;
+  top: 2250px;
+  z-index: 100;
+  width: 100%; }
+
+.bottomMain {
+  position: absolute;
+  top: 4750px;
+  left: 35%;
+  z-index: 100;
+  width: 60%; }
+  .bottomMain h2 {
+    color: white; }
+  .bottomMain p {
+    color: rgba(255, 255, 255, 0.5); }
+  .bottomMain .lowerLinks a {
+    color: #4dc1b4;
+    text-transform: capitalize; }
+    .bottomMain .lowerLinks a:first-child {
+      margin-right: 5%;
+      margin-left: 3%; }
+
+/**
+*
+*/
+.article h2 {
+  padding-bottom: 20px; }
+
+#articleWrapper {
+  width: 100%; }
+
+@media (min-width: 1200px) {
+  .middleMain iframe {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto 125px auto; }
+  .middleMain h3 {
+    width: 1200px;
+    margin: 0 auto 50px auto;
+    font-size: 32px; }
+  .articles {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin: 0 auto; }
+    .articles .article {
+      width: 33%;
+      margin-right: 50px;
+      margin-bottom: 100px; }
+      .articles .article h2 {
+        font-size: 24px; }
+      .articles .article p {
+        font-weight: 300;
+        margin-bottom: 25px; }
+      .articles .article a {
+        color: transparent;
+        text-transform: capitalize;
+        text-decoration: underline; }
+      .articles .article:hover a {
+        color: #000000; }
+        .articles .article:hover a:hover {
+          color: #4dc1b4; } }
+
+footer {
+  background-color: #000000;
+  color: white;
+  position: absolute;
+  top: 5050;
+  width: 100%; }
+  footer .address, footer .usefulLinks, footer .important {
+    width: 20%;
+    margin-right: 10%; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+    footer a:hover {
+      color: #4dc1b4;
+      text-decoration: underline; }
+  footer h2 {
+    color: #4dc1b4; }
+  footer .underbar {
+    width: 100%;
+    height: 2em;
+    background-color: #4dc1b4;
+    color: white; }
+
+@media (min-width: 1200px) {
+  #FooterContentWrapper {
+    width: 100%;
+    display: inline-flex; }
+    #FooterContentWrapper .address, #FooterContentWrapper .usefulLinks, #FooterContentWrapper .important {
+      width: 20%;
+      margin-right: 10%; } }
+
+#carouselWrapper {
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 100;
+  position: absolute;
+  top: 1000px; }
+
+#carousel {
+  width: 1200px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  z-index: 100; }
+  #carousel .slide {
+    width: 35%;
+    margin-right: 2.5%;
+    z-index: 100; }
+    #carousel .slide img {
+      width: 100%;
+      height: 60%;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+    #carousel .slide a {
+      color: #4dc1b4;
+      text-transform: capitalize; }
+    #carousel .slide p {
+      margin-top: 15px;
+      color: rgba(0, 0, 0, 0.5); }
+    #carousel .slide .bottomLink {
+      font-size: 18px; }
+
+.menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  z-index: 900; }
+  .menu .close {
+    width: 15%;
+    margin-left: auto;
+    margin-top: 2%; }
+    .menu .close i {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 32px; }
+      .menu .close i:hover {
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer; }
+  .menu .menuContent {
+    width: 70%;
+    height: 70%;
+    border: 2px solid red;
+    margin: 7% auto;
+    display: flex; }
+    .menu .menuContent li {
+      color: white;
+      list-style: none;
+      font-size: 24px;
+      width: 100%;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.5); }
+
+.overlayWrapper {
+  width: 100%; }
+  .overlayWrapper .lowerImage {
+    width: 80%;
+    margin: 0 auto; }
+    .overlayWrapper .lowerImage img {
+      height: 60%; }
+  .overlayWrapper .overlayText {
+    width: 50%;
+    font-size: 34px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    left: 27%; }
+    .overlayWrapper .overlayText a {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 auto;
+      color: #4dc1b4; }
+
+.lowerText {
+  display: flex;
+  font-size: 16px; }
+  .lowerText p {
+    width: 40%;
+    padding: 25px; }
+
+.overlayedImagesWrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  top: 4100px; }
+  .overlayedImagesWrapper .londonImage {
+    width: 80%;
+    margin: 0 auto; }
+    .overlayedImagesWrapper .londonImage img {
+      width: 100%;
+      height: 600px; }
+  .overlayedImagesWrapper .overlayedImage {
+    position: absolute;
+    top: 80%;
+    left: 15%; }
+    .overlayedImagesWrapper .overlayedImage img {
+      width: 270px;
+      height: 350px; }
+
+.upperBackground {
+  background-color: #1c1c1c;
+  height: 500px;
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+  top: 600px; }
+
+.middleBackground {
+  width: 100%;
+  height: 450px;
+  background-color: #1c1c1c;
+  z-index: 0;
+  position: absolute;
+  top: 1700px; }
+
+.bottomBackground {
+  width: 100%;
+  height: 450px;
+  background-color: #1c1c1c;
+  z-index: 0;
+  position: absolute;
+  top: 4640px; }
+
+.aboutWrapper {
+  position: absolute;
+  top: 850px;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  width: 1200px; }
+  .aboutWrapper h1 {
+    color: white;
+    margin-right: 200px;
+    margin-bottom: 25px; }
+  .aboutWrapper .lorem {
+    width: 35%;
+    color: rgba(225, 225, 225, 0.5);
+    font-weight: 200; }
+  .aboutWrapper a {
+    color: #4dc1b4; }

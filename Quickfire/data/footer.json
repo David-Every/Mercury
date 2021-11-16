@@ -1,0 +1,28 @@
+{
+    "footer":{
+        "address":
+        [{
+            "logo":"#",
+            "address":["52 Berkley Square Mayfair,","London, W1J5BT","info@mercurycomms.com", "+44(0)203 627 2122"],
+            "social":["F","inst","In"],
+            "socialLinks":["www.facebook.com","www.instagram.com","www.linkedin.com"]
+        }],
+        "links":
+        [{
+            "title":"Useful Links",
+            "pages":["Services","Case Studies","Blog","About","Contact us"],
+            "pageLinks":["#","#","#","#","#"]
+        }],
+        "important":
+        [{
+            "title":"Important",
+            "pages":["terms & Conditions","privacy Policy","Cookie","sitemap"],
+            "pageLinks":["#","#","#","#"]
+        }],
+        "formInfo":
+        [{
+
+        }]
+        
+    }
+}

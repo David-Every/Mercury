@@ -1,0 +1,82 @@
+{	
+	"apiVersion": 2,
+	"name": "ainoblocks/grid-item",
+	"title": "Grid Item",
+	"attributes": {
+		"gridColumnStartDesktop": {
+			"type": "number",
+			"default": "1"
+		},
+		"gridColumnEndDesktop": {
+			"type": "number",
+			"default": "7"
+		},
+		"gridColumnStartTablet": {
+			"type": "number",
+			"default": "1"
+		},
+		"gridColumnEndTablet": {
+			"type": "number",
+			"default": "7"
+		},
+		"gridColumnStartMobile": {
+			"type": "number",
+			"default": "1"
+		},
+		"gridColumnEndMobile": {
+			"type": "number",
+			"default": "7"
+		},
+		"alignItem": {
+			"type": "string",
+			"default": "start"
+		},
+		"justifyItem": {
+			"type": "string",
+			"default": "start"
+		},
+		"stackOrder": {
+			"type": "number"
+		},
+		"stacking": {
+			"type": "boolean",
+			"default": false
+		},
+		"gutter": {
+			"type": "boolean",
+			"default": true
+		},
+		"overlapLeft": {
+			"type": "boolean",
+			"default": false
+		},
+		"overlapRight": {
+			"type": "boolean",
+			"default": false
+		},
+		"marginTopDesktop": {
+			"type": "number"
+		},
+		"marginBottomDesktop": {
+			"type": "number"
+		},
+		"marginTopTablet": {
+			"type": "number"
+		},
+		"marginBottomTablet": {
+			"type": "number"
+		},
+		"marginTopMobile": {
+			"type": "number"
+		},
+		"marginBottomMobile": {
+			"type": "number"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		}
+	}
+}

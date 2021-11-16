@@ -1,0 +1,23 @@
+
+.aboutWrapper{
+    position: absolute;
+    top:850px;
+    right:0;
+    z-index: 200;
+    display: flex;
+    width:1200px;
+    // margin-left: auto;
+    h1{
+        color: $primaryLight;
+        margin-right:200px;
+        margin-bottom:25px;
+    }
+    .lorem{
+        width:35%;
+        color: rgba(225,225,225,0.5);
+        font-weight: 200;
+    }
+    a{
+        color:$blueHighlight;
+    }
+}

@@ -1,0 +1,27 @@
+.upperBackground{
+    background-color: $primaryDark;
+    height:500px;
+    z-index: 0;
+    width: 100%;
+    position: absolute;
+    top:600px;
+}
+
+.middleBackground{
+    width: 100%;
+    height:450px;
+    background-color: $primaryDark;
+    z-index: 0;
+    position: absolute;
+    top:1700px;
+}
+
+.bottomBackground{
+    width: 100%;
+    height:450px;
+    background-color: $primaryDark;
+    z-index: 0;
+    position: absolute;
+    top:4640px;
+
+}

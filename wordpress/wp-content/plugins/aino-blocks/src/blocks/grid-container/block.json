@@ -1,0 +1,18 @@
+{
+	"name": "ainoblocks/grid-container",
+	"apiVersion": 2,
+	"title": "Grid Container",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"items": {
+			"type": "number",
+			"default": "1"
+		}
+	}
+}

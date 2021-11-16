@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+h1,h2,h3{
+    font-family: 'Montagu Slab', serif;
+    font-weight: 400;
+}
+p, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+@import
+'structure/colours.scss',
+'structure/header.scss',
+'structure/imageGrid.scss',
+'structure/clients.scss',
+'structure/main.scss',
+'structure/footer.scss',
+'structure/carousel.scss',
+'structure/menu.scss',
+'lowerPage.scss',
+'overlayedImages.scss',
+'misc.scss',
+'about.scss'
+
+;

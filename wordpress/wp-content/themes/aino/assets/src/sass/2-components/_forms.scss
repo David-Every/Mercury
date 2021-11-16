@@ -1,0 +1,330 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+.wp-block-post-comments textarea,
+#rating {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--global--color--form-background);
+	border: 1px solid var(--global--color--form-border);
+	outline: none;
+	line-height: var(--global--line-height-reset);
+	padding: 1.063rem 1.25rem 1.125rem;
+
+	@include input-placeholder {
+		color: var(--wp--custom--color--font-tertiary);
+	}
+
+	&:active,
+	&:focus {
+		color: var(--wp--custom--color--font-secondary);
+		border-color: var(--global--color--form-border-active);
+		box-shadow: 0 0 0 4px var(--global--color--form-glow);
+	}
+}
+
+// Search form in header on desktop with a narrow width.
+.site-header input[type="search"] {
+	max-height: $s-9;
+
+	@include breakpoint(md) {
+		padding: 0.688rem 1.375rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 0.75rem 1.5rem;
+	}
+}
+
+// Testarea
+textarea {
+	width: 100%;
+	background-color: transparent;
+	background: var(--global--color--form-background);
+	border: 1px solid var(--global--color--form-border);
+	padding: $s-4 $s-6;
+	outline: none;
+}
+
+textarea,
+.wp-block-post-comments textarea {
+	line-height: var(--wp--custom--line-height--body);
+}
+
+// Form labels
+form label {
+	position: relative;
+	display: block;
+	line-height: var(--global--line-height-reset);
+	color: var(--wp--custom--color--font-tertiary);
+	@include s-r-2 (margin-bottom);
+	border-radius: var(--global--border-radius-xxs);
+
+	&.checkbox {
+		@include s-r-4 (margin-bottom);
+	}
+}
+
+// Select forms
+select,
+.select2-selection--single {
+	border: 1px solid var(--global--color--form-border);
+	@include s-r-5 (padding);
+	background-repeat:no-repeat;
+	background-position: right 14px top 21px;
+	background-size: 12px 12px;
+	-webkit-appearance: none;
+}
+
+.select2-container
+.select2-selection--single {
+	margin-bottom: 0;
+	height: auto;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.select2-results__options {
+	background: var(--wp--custom--color--font-secondary);
+}
+
+.select2-selection__arrow svg {
+	color: var(--wp--custom--color--font-secondary);
+}
+
+.select2-search--dropdown {
+	display: none;
+}
+
+// Checkboxes
+.checkbox,
+form .comment-form-cookies-consent,
+.woocommerce-form__label-for-checkbox {
+	color: var(--wp--custom--color--font-secondary);
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-appearance: none;
+	min-width: $s-6;
+	width: $s-6;
+	height: $s-6;
+	border: 1px solid var(--global--color--form-border);
+	background-color: var(--global--color--form-background);
+	border-radius:50%;
+	outline:none;
+	@include s-r-2 (margin-right);
+	margin-bottom: 0;
+}
+
+input[type='radio']:before,
+input[type='checkbox']:before {
+	content:'';
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	position: relative;
+
+	&:focus {
+		border-color: var(--global--color--form-border-active);
+		box-shadow: 0 0 0 4px var(--global--color--form-glow);
+		background: var(--global--color--form-border-active);
+	}
+
+	&:checked:before {
+		border-color: var(--global--color--form-border-active);
+		background: var(--global--color--form-border-active);
+		fill: var(--global--color--form-select-fill);
+		color: var(--global--color--form-select-fill);
+	}
+
+	&:after {
+	content: "";
+	position: absolute;
+	display: none;
+	}
+
+	&:checked:after {
+		display: block;
+	}
+}
+
+input[type='checkbox'] {
+
+	&:after {
+		left: 8px;
+		top: 4px;
+		width: 7px;
+		height: 12px;
+		border: solid white;
+		border-width: 0 2px 2px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+}
+
+
+input[type='radio'] {
+
+	&:after {
+		left: 8px;
+		top: 8px;
+		width: 6px;
+		height: 6px;
+		border-radius: 100px;
+		background-color: var(--global--color--form-select-fill);
+	}
+}
+
+.wc_payment_method,
+.comment-form-cookies-consent {
+	label {
+		margin-bottom: 0;
+		color: var(--wp--custom--color--font-secondary);
+	}
+}
+
+/* Form Submit */
+input[type="submit"],
+button[type="submit"] {
+	display: block;
+	clear: both;
+}
+
+.wp-block-post-comments .submit {
+	border: none;
+}
+
+// Default comment form
+.color-notice,
+label.color-notice span {
+	color: var(--global--color--notification);
+}
+
+.comment-respond textarea {
+	min-height: 7.5rem;
+}
+
+.single form p,
+.page form p {
+	@include s-r-6 (padding-top);
+	padding-bottom: 0;
+}
+
+form p.comment-form-comment {
+	margin: 0;
+	line-height: 1;
+}
+
+/* Search Form */
+.searchform-wrap,
+.form-wrap {
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.entry-content .search-form,
+.widget_search .search-form {
+	position: relative;
+}
+
+.entry-content label .search-icon,
+.widget_search label .search-icon {
+	display: none;
+}
+
+.entry-content .search-submit span.search-icon,
+.widget_search .search-submit span.search-icon {
+	width: $s-13;
+	height: $s-10;
+	padding: $s-4 0 0;
+}
+
+.error404 .entry-content {
+	.searchform-wrap {
+
+		.search-field {
+			@include s-r-6 (margin-bottom);
+		}
+	
+	}
+}
+
+/* Form Styles (via Customizer Settings) */
+.form-curved {
+	input,
+	textarea,
+	select {
+		border-radius: var(--global--border-radius-xxs);
+	}
+
+	input[type='checkbox'],
+	input[type='radio'] {
+		border-radius: 50%;
+	}
+}
+
+.form-round {
+
+	input,
+	select {
+		border-radius: var(--global--border-radius-round);
+	}
+
+	textarea {
+		border-radius: var(--global--border-radius-s);
+	}
+}
+
+/* Mailchimp Form */
+.mc4wp-form {
+
+	.mc4wp-form-fields p.has-m-font-size:first-of-type {
+		padding-top: 0 !important;
+	}
+
+	.mc4wp-alert p {
+		text-align: center;
+	}
+
+	.mc4wp-success p {
+		color: var(--global--color--success);
+	}
+
+	.mc4wp-notice p {
+		color: var(--global--color--notification);
+	}
+}
+
+.footer-widget-wrap {
+
+	.mc4wp-form p {
+		@include s-r-4 (padding-top);
+	}
+}

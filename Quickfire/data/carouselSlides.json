@@ -1,0 +1,35 @@
+{
+    "slides":{
+        "slide":
+        [
+            {
+                "toplinkText":"Improving digital and audience content",
+                "topLink":"#",
+                "image":"images/imageOne.jpg",
+                "imageAlt":"Working on Laptop",
+                "bottomLinkText":"Media Relations",
+                "bottomLink":"#",
+                "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            },
+            {
+                "toplinkText":"helping to strengthen buisness",
+                "topLink":"#",
+                "image":"images/imageTwo.png",
+                "imageAlt":"Filming Events",
+                "bottomLinkText":"partnerships &amp; events",
+                "bottomLink":"#",
+                "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            },
+            {
+                "toplinkText":"managing large and small companies",
+                "topLink":"#",
+                "image":"images/imageThree.jpg",
+                "imageAlt":"Business Meetings",
+                "bottomLinkText":"Social Media",
+                "bottomLink":"#",
+                "paragraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,118 @@
+a {
+	color: inherit;
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+
+/* Primary Links */
+.entry-content p a,
+.entry-content li a,
+.authorbox__content p a,
+.comment-content li a,
+.comment-content p a,
+.wp-caption-text a,
+cite a,
+.wp-block-image figcaption a,
+.wp-block-audio figcaption a,
+.wp-block-embed figcaption a,
+.woocommerce-info a,
+.comment-reply-title #cancel-comment-reply-link,
+.wc-block-components-checkout-return-to-cart-button,
+.wc-block-components-checkout-step__heading-content a,
+.reset_variations,
+.woocommerce-notices-wrapper a,
+.woocommerce-message a,
+.custom-product-page-link,
+.wp-block-post-excerpt__more-link,
+.comment .comment-body p a {
+	color: currentColor;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.page .entry-content .wp-block-group.has-link-color p a:hover,
+.page .entry-content p.has-link-color a:hover {
+	color: var(--wp--style--color--link);
+}
+
+/* Links that keep the default text color and only show link color on hover */
+.site-title a,
+h2.entry-title a,
+.comment-list b.fn a,
+.main-navigation a {
+	color: var(--wp--custom--color--font-primary);
+	fill: var(--wp--custom--color--font-primary);
+}
+
+.posts-container .hentry .entry-meta a,
+.entry-comments a,
+.posted-on a,
+.comment-reply-title #cancel-comment-reply-link,
+.comment-body .reply a {
+	color: var(--wp--custom--color--font-tertiary);
+	fill: var(--wp--custom--color--font-tertiary);
+}
+
+/* Link Hovers */
+.header-cta-wrap a,
+.footer-widget-wrap li a,
+.site-info a,
+.site-footer a.back-top,
+.woocommerce-breadcrumb a,
+.mc4wp-form p a,
+.woocommerce-review-link,
+.posted_in a,
+.post-meta a,
+.wp-block-post-terms a,
+.comment-meta a,
+.comment-body .reply a,
+.wp-block-query-pagination a {
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/* Meta Textlink Hovers */
+h1:not(.site-title), h2, h3, h4, h5, h6,
+.entry-meta,
+.related-post .entry-cats,
+.wp-block-ainoblocks-grid-item {
+
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+/* Link Transitions */
+.site-branding a,
+.primary-menu a,
+.site-footer .widget_mc4wp_form_widget a,
+.site-footer a,
+.social-header-nav .icon,
+.social-footer-nav .icon,
+.sd-social-icon .sd-content ul li[class*='share-'] a {
+	@include transition-default;
+}
+
+.entry-link,
+.entry-link img,
+.navigation .nav-thumb {
+	@include transition-posthover;
+}
+
+.wp-block-navigation:not([style*=text-decoration]) a:hover,
+.wp-block-navigation:not([style*=text-decoration]) a:active,
+.wp-block-navigation:not([style*=text-decoration]) a:focus {
+	text-decoration: underline;
+	outline: none;
+}

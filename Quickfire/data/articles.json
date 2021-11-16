@@ -1,0 +1,19 @@
+{
+    "articles":{
+        "article":
+        [
+            {
+                "title":"Property &amp; Interiors",
+                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            },
+            {
+                "title":"Hospitality &amp; luxury lifestyle",
+                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            },
+            {
+                "title":"Corperate &amp; travel",
+                "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            }
+        ]
+    }
+}

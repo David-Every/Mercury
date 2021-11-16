@@ -1,0 +1,30 @@
+#clients{
+    position: absolute;
+    top:1500px;
+    left:40%;
+    h2{
+        text-align: center;
+        text-transform: lowercase;
+        font-size: 34px;
+        
+        z-index: 100;
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+}
+
+.gridstart{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    // padding: 10px;
+    width:80%;
+    margin:75px auto 100px auto;
+    overflow: hidden;
+    .clientGrid-item {
+        // padding: 20px;
+        width:50px;
+        font-size: 30px;
+        text-align: center;
+    }
+}

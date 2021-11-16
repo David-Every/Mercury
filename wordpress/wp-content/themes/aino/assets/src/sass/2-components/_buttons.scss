@@ -1,0 +1,133 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include btn;
+	@include btn-m;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+	@include btn-primary;
+}
+
+/* Button Hover Color */
+.wp-block-button__link,
+.wp-block-ainoblocks-button:not(.is-style-outline) .wp-block-ainoblocks-button__link,
+.wc-block-components-button:not(.is-link) {
+
+	&:hover {
+		color: var(--wp--custom--color--button-color-secondary);
+		background-color: var(--wp--custom--color--secondary);
+	}
+}
+
+/* Button Styles */
+a.btn-primary,
+.btn-primary a {
+	@include btn;
+	@include btn-primary;
+}
+
+a.btn-outline,
+.btn-outline a {
+	@include btn;
+	@include btn-outline;
+}
+
+.btn-naked,
+.btn-naked a {
+	@include btn-naked;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.btn-long,
+.cr_button {
+	width: 100%;
+}
+
+.stretch {
+	width: 100% !important;
+
+	.wp-block-ainoblocks-multiple-buttons__inner,
+	.wp-block-ainoblocks-button__link {
+		width: 100% !important;
+	}
+}
+
+/* Button Sizes */
+.btn-xxs {
+	@include btn-s;
+}
+
+.btn-xs {
+	@include btn-s;
+}
+
+.btn-s {
+	@include btn-s;
+}
+
+.btn-m {
+	@include btn-m;
+}
+
+.btn-l {
+	@include btn-l;
+}
+
+.btn-xl {
+	@include btn-xl;
+}
+
+.btn-xxl {
+	@include btn-xxl;
+}
+
+.btn-xxxl {
+	@include btn-xxxl;
+}
+
+.btn-xxxxl {
+	@include btn-xxxxl;
+}
+
+/* Button Styles (via Customizer Settings) */
+.btn-curved {
+
+	.btn,
+	input[type="submit"],
+	button[type="submit"],
+	a.btn-primary,
+	.edit,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a,
+	.woocommerce-button,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input,
+	.woocommerce-MyAccount-navigation li a {
+		border-radius: var(--global--border-radius-xxs);
+	}
+}
+
+.btn-round {
+
+	.btn,
+	.edit,
+	input[type="submit"],
+	button[type="submit"],
+	a.btn-primary,
+	.btn-primary a,
+	a.btn-outline,
+	.btn-outline a,
+	.woocommerce-button,
+	.search-header .search-field,
+	.wc-block-components-button,
+	.form-submit.wp-block-button input,
+	.woocommerce-MyAccount-navigation li a {
+		border-radius: var(--global--border-radius-round);
+	}
+}

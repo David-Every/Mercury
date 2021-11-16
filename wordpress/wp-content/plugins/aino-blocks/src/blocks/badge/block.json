@@ -1,0 +1,39 @@
+{
+	"apiVersion": 2,
+	"name": "ainoblocks/badge",
+	"title": "Badge",
+	"attributes": {
+		"content": {
+			"type": "string"
+		},
+		"size": {
+			"type": "string",
+			"default": "size__m"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"borderColor": {
+			"type": "string"
+		},
+		"alignment": {
+			"type": "string"
+		},
+		"borderRadius": {
+			"type": "number"
+		},
+		"gradient": {
+			"type": "string"
+		},
+		"icon": {
+			"type": "boolean",
+			"default": false
+		}
+	}
+}

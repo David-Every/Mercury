@@ -1,0 +1,40 @@
+.overlayWrapper{
+    width:100%;
+    .lowerImage{
+        width:80%;
+        margin:0 auto;
+        img{
+            height: 60%;
+        }
+    }
+    .overlayText{
+        width:50%;
+        font-size: 34px;
+        font-weight: 600;
+        color:$primaryLight;
+        position: absolute;
+        z-index: 1;
+        top:75%;
+        left:27%;
+
+        a{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            margin:0 auto;
+            color:$blueHighlight;
+        }
+    }
+}
+
+.lowerText{
+    // width:60%;
+    display: flex;
+    font-size: 16px;
+    p{
+        width:40%;
+        padding:25px;
+    }
+    
+    
+}

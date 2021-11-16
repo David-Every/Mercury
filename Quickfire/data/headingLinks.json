@@ -1,0 +1,21 @@
+{
+    "heading":{
+        "LinkInfo":[
+            {
+                "title":"belgrade",
+                "linkText":"The Waterfront",
+                "LinkDestination":"#"
+            },
+            {
+                "title":"Lustico Bay",
+                "linkText":"Property Development",
+                "LinkDestination":"#"
+            },
+            {
+                "title":"Skin Library",
+                "linkText":"The Skin Library",
+                "LinkDestination":"#"
+            }
+        ]
+    }
+}
